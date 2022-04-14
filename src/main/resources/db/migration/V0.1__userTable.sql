@@ -21,11 +21,11 @@ CREATE TABLE clients(
     id INTEGER PRIMARY KEY,
     adv_id INTEGER,
     client_name VARCHAR(50),
-    Address VARCHAR(255),
-    Phone_number INTEGER,
-    Date_created DATE DEFAULT now(),
-    Date_modified DATE DEFAULT now(),
-    Email VARCHAR(256),
+    address VARCHAR(255),
+    phone_number INTEGER,
+    date_created DATE DEFAULT now(),
+    date_modified DATE DEFAULT now(),
+    email VARCHAR(256),
     active BOOLEAN DEFAULT TRUE,
     CONSTRAINT fk_adv_id FOREIGN KEY (adv_id) REFERENCES advocate (id)
 );
@@ -41,8 +41,8 @@ CREATE TABLE court_hearing(
     id INTEGER PRIMARY KEY,
     client_id INTEGER,
     charged_section INTEGER,
-    Hearing_date DATE DEFAULT now(),
-    Hours_spent TIME,
+    hearing_date DATE DEFAULT now(),
+    hours_spent TIME,
     active BOOLEAN DEFAULT TRUE,
     CONSTRAINT fk_client_id FOREIGN KEY (client_id) REFERENCES clients (id)
 );
