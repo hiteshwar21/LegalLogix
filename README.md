@@ -1,4 +1,4 @@
-# LegalLogix - Intelligent Digital solution for all courtroom things
+# LegalLogix
 The goal is to develop a comprehensive solution for lawyers, enabling them to efficiently create and manage digital records for their clients. This all-in-one platform will facilitate the storage of legal documents and provide intelligent extraction of valuable information from these documents. It aims to streamline the workflow and enhance the working process for advocates.
 
 # Target Group:
