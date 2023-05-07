@@ -1,9 +1,5 @@
-# Themis - Legal Counsel System
-The main idea is to create a web app for lawyers to intelligently create/manage digital records of all of his clients. It'll help him store legal documents and extract useful
-information from all these documents.
-
-# Requirement:
-Management system for easy working of advocates.
+# LegalLogix - Intelligent Digital solution for all courtroom things
+The goal is to develop a comprehensive solution for lawyers, enabling them to efficiently create and manage digital records for their clients. This all-in-one platform will facilitate the storage of legal documents and provide intelligent extraction of valuable information from these documents. It aims to streamline the workflow and enhance the working process for advocates.
 
 # Target Group:
 - Independent lawyers
