@@ -1,4 +1,4 @@
-# LMS - Legal Document Management System
+# Themis - Legal Counsel System
 The main idea is to create a web app for lawyers to intelligently create/manage digital records of all of his clients. It'll help him store legal documents and extract useful
 information from all these documents.
 
