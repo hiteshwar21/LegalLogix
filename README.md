@@ -10,20 +10,28 @@ The goal is to develop a comprehensive solution for lawyers, enabling them to ef
 - Licensed for Big Law Firms.
 
 # Features for MVP:
-1. Listing of clients per advocate
-2. Document/data per client in Listing/ShowPage form
-3. Invoices/Client Fees
-4. Download Excels
-5. Time Effort/ Key Performance Indicator
-6. Complete deletion of a user from system 
+1. Login & Registration with Server-side validations
+ 1.1. Save clients details on Cloud securely with Spring Security.
+ 1.2. Encryption on saving passwords with BCrypt password encoder.
+2. Listing of clients per advocate
+ 2.1. Client Dashboard to view, add, update, delete clients, logout etc. 
+ 2.2. Added pagination for pages to view more clients.
+3. Document/data per client in Listing/ShowPage form
+ 3.1. Store scanned legal docs/contracts and process them to machine-readable PDFs.
+4. Invoices/Client Fees
+5. Download Excels
+6. Time Effort/ Key Performance Indicator
 7. Docker Implementation
 8. Unit Test cases for everything
 9. Uploaded Doc Validations
+10. Complete deletion of a user from system (GDFR Compliance)
 
 # Future features:
 1. Calendars/Hearing notifications at email
 2. Universal search
 3. Extraction for docs
+4. Automatically extract data out of docs.
+  4.1. Trained ML models that could identify certain metadata/clauses from these documents.
 
 # User Journey for happy flow:
 
@@ -39,29 +47,17 @@ The goal is to develop a comprehensive solution for lawyers, enabling them to ef
 - All these documents would have addition/updation(in the form of uploads in JPEG Format) allowed on them. (Delete will also be there but only Soft Delete aka Archive).
 - Further, Clicking on Document would lead you to Document Show Page, where we have OCRed copy of the original document. We can view the original document as well by clicking a toggle.
 
-# Future Feature Addition
-Trained ML models that could identify certain metadata/clauses from these documents.
-
-# Features
-- Easy Login & Registration with Server-side validations.
-- Save clients details on Cloud securely with Spring Security.
-- Encryption on saving passwords with BCrypt password encoder.
-- Client Dashboard to view, add, update, delete clients, logout etc.
-- Added pagination for pages to view more clients.
-- Easily view and delete the client documents.
-- Store scanned legal docs/contracts and process them to machine-readable PDFs.
-- Analyse these docs and automatically extract data out of them.
-
 # Dependencies
-- spring-boot-starter-data-jpa
-- spring-boot-starter-web
-- spring-boot-starter-thymeleaf
-- mysql-connector-java
-- validation-api
-- hibernate-validator
+- spring-boot-starter-data-jdbc
 - spring-boot-starter-security
+- spring-boot-starter-web
+- mybatis-spring-boot-starter
 - spring-boot-devtools
-- bootstrap
+- flyway-core
+- lombok
+- spring-boot-starter-test
+- spring-security-test
+- spring-boot-maven-plugin
 
 
 # Login Page
