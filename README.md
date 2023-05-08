@@ -11,13 +11,13 @@ The goal is to develop a comprehensive solution for lawyers, enabling them to ef
 
 # Features for MVP:
 1. Login & Registration with Server-side validations
- 1.1. Save clients details on Cloud securely with Spring Security.
- 1.2. Encryption on saving passwords with BCrypt password encoder.
+ - Save clients details on Cloud securely with Spring Security.
+ - Encryption on saving passwords with BCrypt password encoder.
 2. Listing of clients per advocate
- 2.1. Client Dashboard to view, add, update, delete clients, logout etc. 
- 2.2. Added pagination for pages to view more clients.
+ - Client Dashboard to view, add, update, delete clients, logout etc. 
+ - Added pagination for pages to view more clients.
 3. Document/data per client in Listing/ShowPage form
- 3.1. Store scanned legal docs/contracts and process them to machine-readable PDFs.
+ - Store scanned legal docs/contracts and process them to machine-readable PDFs.
 4. Invoices/Client Fees
 5. Download Excels
 6. Time Effort/ Key Performance Indicator
@@ -31,7 +31,7 @@ The goal is to develop a comprehensive solution for lawyers, enabling them to ef
 2. Universal search
 3. Extraction for docs
 4. Automatically extract data out of docs.
-  4.1. Trained ML models that could identify certain metadata/clauses from these documents.
+ - Trained ML models that could identify certain metadata/clauses from these documents.
 
 # User Journey for happy flow:
 
