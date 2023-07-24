@@ -5,13 +5,11 @@ import model.ClientRequestModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.HttpClientErrorException;
-import service.ClientService;
 import service.ClientServiceImpl;
 import util.APIResponseStructure;
 
@@ -23,7 +21,7 @@ public class ClientController {
     private ClientServiceImpl clientService;
 
     /*API to create a form for client to fill and send Create/Update API hit*/
-    @RequestMapping(value = "client/createForm", method = RequestMethod.GET)
+    @RequestMapping(value = "client/create", method = RequestMethod.GET)
     @ResponseBody
     public APIResponseStructure<ClientRequestModel> createClientForm() {
         APIResponseStructure<ClientRequestModel> apiResponse = new APIResponseStructure<>();

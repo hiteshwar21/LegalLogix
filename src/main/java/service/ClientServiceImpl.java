@@ -15,19 +15,31 @@ public class ClientServiceImpl implements ClientService {
 
     private final Logger logger = Logger.getLogger(String.valueOf(this.getClass()));
 
+    /**
+     * This method is used to create a form for client to fill and send Create/Update API hit
+     * @return ClientRequestModel
+     */
     @Override
     public ClientRequestModel createClientForm(){
-        ClientRequestModel clientRequestModel = new ClientRequestModel();
-        return clientRequestModel;
+        return new ClientRequestModel();
     }
 
+    /**
+     * This method is used to create a client
+     * @param clientRequestModel - A POJO pertaining client Information
+     * @return String
+     */
     @Override
-    public String createClient(ClientRequestModel requestModel) {
-        validationCreateClient(requestModel);
-        //requestModel.setAdvId(Authentication);
+    public String createClient(ClientRequestModel clientRequestModel) {
+        validationCreateClient(clientRequestModel);
+        //requestModel.setAdvId(AuthenticationRe);
         return "";
     }
 
+    /**
+     * This method is used to validate the request model for create client
+     * @param requestModel - A POJO pertaining client Information
+     */
     void validationCreateClient(ClientRequestModel requestModel){
         if(requestModel == null){
             throw new BadRequestException(ResponseMessages.EMPTY_PAYLOAD);
